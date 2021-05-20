@@ -16,6 +16,7 @@ class gamePlan(tk.Frame):
         self.master.bind("<Up>",self.up)
         self.master.bind("<Down>",self.down)
         self.main()
+
     def create_graphics(self):
         self.arr = []
         for i in range(4):
@@ -33,6 +34,7 @@ class gamePlan(tk.Frame):
         tk.Label(score, text = "Score", font = c.SCORE_LABEL_FONT).grid(row = 0)
         self.score_label = tk.Label(score, text="0", font=c.SCORE_FONT)
         self.score_label.grid(row=1)
+
     def start(self):
         self.matrix = [[0]*4 for _ in range(4)]
         r = random.randint(0,3)
@@ -42,6 +44,15 @@ class gamePlan(tk.Frame):
         self.arr[r][c]['number'].configure(bg=c.CELL_COLORS[2], fg=c.CELL_NUMBER_COLORS[2], font=c.CELL_NUMBER_FONTS[2], text='2')
         self.score = 0
 
+    def stack(self):
+        temp = [[0]*4 for _ in range(4)]
+        for i in range(4):
+            idx = 0
+            for j in range(4):
+                if self.matrix[i][j] != 0:
+                    temp[i][idx] = self.matrix[i][j]
+                    idx += 1
+        self.matrix = temp
 
 def main():
     gamePlan()
