@@ -33,7 +33,14 @@ class gamePlan(tk.Frame):
         tk.Label(score, text = "Score", font = c.SCORE_LABEL_FONT).grid(row = 0)
         self.score_label = tk.Label(score, text="0", font=c.SCORE_FONT)
         self.score_label.grid(row=1)
-
+    def start(self):
+        self.matrix = [[0]*4 for _ in range(4)]
+        r = random.randint(0,3)
+        c = random.randint(0,3)
+        self.matrix[r][c] = 2
+        self.arr[r][c]['frame'].configure(bg=c.CELL_COLORS[2])
+        self.arr[r][c]['number'].configure(bg=c.CELL_COLORS[2], fg=c.CELL_NUMBER_COLORS[2], font=c.CELL_NUMBER_FONTS[2], text='2')
+        self.score = 0
 
 
 def main():
