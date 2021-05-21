@@ -15,7 +15,7 @@ class gamePlan(tk.Frame):
         self.master.bind("<Right>",self.right)
         self.master.bind("<Up>",self.up)
         self.master.bind("<Down>",self.down)
-        self.main()
+        self.mainloop()
     def create_graphics(self):
         self.arr = []
         for i in range(4):
@@ -53,9 +53,9 @@ class gamePlan(tk.Frame):
     def merge(self):
         for i in range(4):
             for j in range(3):
-                if self.matrix == self.matrix[i][j+1] and self.matrix[i][j] != 0:
-                    self.matrix[i][j] *=2
-                    self.matrix[i][j+1] = 0
+                if self.matrix[i][j] != 0 and self.matrix[i][j] == self.matrix[i][j + 1]:
+                    self.matrix[i][j] *= 2
+                    self.matrix[i][j + 1] = 0
                     self.score += self.matrix[i][j]
     def backwards(self):
         temp = []
@@ -116,9 +116,11 @@ class gamePlan(tk.Frame):
         self.end()
     def down(self,event):
         self.translate()
+        self.backwards()
         self.stack()
         self.merge()
         self.stack()
+        self.backwards()
         self.translate()
         self.add()
         self.update_graphics()
