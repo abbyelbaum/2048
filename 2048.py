@@ -53,6 +53,21 @@ class gamePlan(tk.Frame):
                     temp[i][idx] = self.matrix[i][j]
                     idx += 1
         self.matrix = temp
+    def merge(self):
+        for i in range(4):
+            for j in range(3):
+                if self.matrix == self.matrix[i][j+1] and self.matrix[i][j] != 0:
+                    self.matrix[i][j] *=2
+                    self.matrix[i][j+1] = 0
+                    self.score += self.matrix[i][j]
+    def backwards(self):
+        temp = []
+        for i in range(4):
+            temp.append([])
+            for j in range(4):
+                temp[i].append(self.matrix[i][3-j])
+        self.matrix = temp
+
 
 def main():
     gamePlan()
