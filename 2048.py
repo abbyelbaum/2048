@@ -1,3 +1,4 @@
+# tkinter color source: http://www.science.smith.edu/dftwiki/index.php/Color_Charts_for_TKinter
 import tkinter as tk
 import colors as color
 import random
