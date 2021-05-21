@@ -16,7 +16,7 @@ CELL_COLORS = {
     64: "seaGreen2",
     128: "turquoise2",
     256: "blue2",
-    512: "dark orchird",
+    512: "DarkOrchid1",
     1024: "slate blue",
     2048: "deep pink"
 }
