@@ -8,22 +8,22 @@ WINNER_BG = "#ffcc00"
 LOSER_BG = "#a39489"
 
 CELL_COLORS = {
-    2: "#fcefe6",
-    4: "#f2e8cb",
-    8: "#f5b682",
-    16: "#f29446",
-    32: "#ff775c",
-    64: "#e64c2e",
-    128: "#ede291",
-    256: "#fce130",
-    512: "#ffdb4a",
-    1024: "#f0b922",
-    2048: "#fad74d"
+    2: "indian red",
+    4: "firebrick",
+    8: "coral",
+    16: "yellow",
+    32: "chartreuse2",
+    64: "seaGreen2",
+    128: "turquoise2",
+    256: "blue2",
+    512: "dark orchird",
+    1024: "slate blue",
+    2048: "deep pink"
 }
 
 CELL_NUMBER_COLORS = {
-    2: "#695c57",
-    4: "#695c57",
+    2: "#ffffff",
+    4: "#ffffff",
     8: "#ffffff",
     16: "#ffffff",
     32: "#ffffff",
