@@ -14,6 +14,9 @@ https://levelskip.com/puzzle/How-to-play-2048#:~:text=The%20rules%20are%20also%2
 https://www.geeksforgeeks.org/2048-game-in-python/
   - Helped with logic for 2048 game and ideas for which methods to make
 
+https://docs.python.org/3/library/tkinter.html
+  - Helped us figure out Tkinter
+
 https://www.youtube.com/watch?v=b4XP2IcI-Bg
-  - Helped us implement the GUI, Tkinkter, and colors
+  - Helped us implement the GUI, Tkinter, and colors
   - Helped with logic
