@@ -8,6 +8,9 @@ Our code is a 2048 game. In 2048, a player starts with two tiles, and moves thos
 
 Sources:
 
+https://levelskip.com/puzzle/How-to-play-2048#:~:text=The%20rules%20are%20also%20simple,numbers%20written%20on%20them%20initially.
+  - How to play 2048, helped us outline what we wanted to do and gave us the rules
+
 https://www.geeksforgeeks.org/2048-game-in-python/
   - Helped with logic for 2048 game and ideas for which methods to make
 
